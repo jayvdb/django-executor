@@ -9,4 +9,6 @@ class ExecutorConfig(AppConfig):
     verbose_name = _("Django Executor")
 
     def ready(self):
-        de_settings.patch_all()
+        # This causes problems with other apps
+        # de_settings.patch_all()
+        pass
